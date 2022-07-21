@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import ReactDOM from "react-dom";
 import "./miniquizz.css";
 
 //Initiating the List of Question
@@ -88,7 +87,7 @@ const MiniQuizz = () => {
   };
 
   return (
-    <div className="miniquizzContainer">
+    <div>
       <h1 className="header"> Planet Quiz </h1>
       {result ? (
         <div className="resultBox">

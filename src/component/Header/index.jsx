@@ -1,6 +1,9 @@
 import { Nav, NavLink, Bars, NavMenu, Title } from "./headerElements";
 import React from "react";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f971850f7265b591a3303f614576fadc7e6fbb7
 const Header = () => {
   return (
     <>

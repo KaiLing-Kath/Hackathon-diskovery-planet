@@ -5,9 +5,9 @@ import Modal from "../PlanetDescription_modal/index";
 
 const PlanetDescription = () => {
   //to open popup
-  const [popup, setPopup] = useState(false);
+  const [popup, setPopup] = useState(true);
   //to indicate which planet is click
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(6);
 
   const planets = [
     {
@@ -84,6 +84,7 @@ const PlanetDescription = () => {
           {planets.map((items) => (
             <input
               type="image"
+              title={items.planet_name}
               src={items.image}
               key={items.planet_name}
               alt={items.planet_name}
