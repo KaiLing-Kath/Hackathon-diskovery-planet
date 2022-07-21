@@ -21,13 +21,14 @@
   display: flex;
 }
 .description_box > img {
-  height: 30vw;
-  width: 30vw;
+  height: 25vw;
+  width: 25vw;
 }
+
 .planet_description {
   text-align: justify;
   text-justify: inter-word;
-  font-size: x-large;
+  font-size: large;
   line-height: 1.5;
 }
 
