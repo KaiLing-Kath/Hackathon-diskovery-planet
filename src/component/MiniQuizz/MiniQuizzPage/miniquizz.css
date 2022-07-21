@@ -17,13 +17,20 @@
   animation: textclip 1.5s linear infinite;
   display: block;
   font-size: 150px;
-  margin: 30px auto;
-  width: fit-content;
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
 }
-
+.miniquizzContainer {
+  background: url("../../../Assets/Background/miniquizz_bk.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: calc(100vh - 85px);
+}
 @keyframes textclip {
   to {
-    background-position: 200% center;
+    background-position: 100% center;
   }
 }
 

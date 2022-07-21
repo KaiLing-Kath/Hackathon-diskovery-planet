@@ -14,15 +14,14 @@ export default function NasaPhoto() {
       );
       const data = await res.json();
       setPhotoData(data);
-      console.log(data);
     }
   }, []);
 
   if (!photoData) return <div />;
 
   return (
-    <div>
-      <img src={photoData.url} alt={photoData.title} />
+    <div className="container">
+      <img className="Pic" src={photoData.url} alt={photoData.title} />
       <div>
         <h1 className="Title">{photoData.title}</h1>
         <p className="tarik">{photoData.date}</p>
