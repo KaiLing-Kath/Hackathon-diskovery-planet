@@ -21,7 +21,6 @@ function App() {
               <>
                 <PlanetDescription />
                 <StartQuizz />
-                <NasaPhoto />
               </>
             }
           />
@@ -34,6 +33,8 @@ function App() {
   );
 }
 export default App;
+// <NasaPhoto />;
+
 //<Route path="/nasaphoto" element={<NasaPhoto />}></Route>;
 //  <BrowserRouter>
 //     <div>

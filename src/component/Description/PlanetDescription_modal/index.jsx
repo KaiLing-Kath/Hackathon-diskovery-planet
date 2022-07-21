@@ -1,4 +1,5 @@
 import "./PlanetDescription_modal.css";
+
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 const api = axios.create({
@@ -47,11 +48,11 @@ const Modal = (props) => {
           </div>
 
           <div className="description_box">
-            <img className="planet_image" src={image} alt="Image"></img>
-            <div className="planet_name_descripton">
+            <img className="column" src={image} alt="Image"></img>
+            <div className="column">
               <p className="planet_name">{planets[props.index].planet_name}</p>
               <p className="planet_description">
-                {description.slice(0, description.indexOf("Read more"))}
+                {description.slice(0, description.indexOf("http"))}
               </p>
             </div>
           </div>
@@ -63,4 +64,18 @@ const Modal = (props) => {
   );
 };
 
+// <div className="description_box" class="row">
+//   <img
+//     className="planet_image"
+//     src={image}
+//     alt="Image"
+//     class="column"
+//   ></img>
+//   <div className="planet_name_descripton" class="column">
+//     <p className="planet_name">{planets[props.index].planet_name}</p>
+//     <p className="planet_description">
+//       {description.slice(0, description.indexOf("http"))}
+//     </p>
+//   </div>
+// </div>;
 export default Modal;
