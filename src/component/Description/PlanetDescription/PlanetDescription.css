@@ -1,0 +1,18 @@
+input {
+  width: 150px;
+  height: auto;
+}
+input:hover {
+  transform: scale(1.5);
+}
+.planets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 5%;
+}
+.planet_animation {
+  padding: 1.5rem;
+}
+/* min-height: calc(100vh - 85px); */

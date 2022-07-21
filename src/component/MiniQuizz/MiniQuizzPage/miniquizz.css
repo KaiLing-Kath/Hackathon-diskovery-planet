@@ -1,0 +1,139 @@
+.header {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: block;
+  font-size: 150px;
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+.miniquizzContainer {
+  background: url("../../../Assets/Background/miniquizz_bk.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: calc(100vh - 85px);
+}
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+
+.questionList {
+  text-align: center;
+  display: inline-flex;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+
+.QnA {
+  color: black;
+  margin: 16px;
+}
+
+.questionBox {
+  color: white;
+  width: 100%;
+}
+
+.questionIndex {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.question {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px;
+}
+
+.answerBox {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  padding: 10px 100px 100px 100px;
+}
+
+.button {
+  color: white;
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 30px;
+  border-radius: 15px;
+  border-style: solid;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: black 0 -3px 50px inset;
+  margin-bottom: 20px;
+  background: rgba(0, 30, 88, 0.6);
+}
+
+.button:hover {
+  transform: translateY(4px);
+}
+
+.button:active {
+  box-shadow: 0 5px black;
+}
+
+.resultBox {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 90px;
+  font-size: 50px;
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    font-size: 40px;
+  }
+}
+
+.restartButton {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 250px;
+  color: black;
+  font-size: 25px;
+  padding: 15px 10px;
+  box-sizing: content-box;
+  border-radius: 15px;
+  background: rgba(242, 244, 248, 0.6);
+  cursor: pointer;
+}
+
+.restartButton:hover {
+  background-color: white;
+  transform: translateY(4px);
+}
+
+.restartButton:active {
+  box-shadow: 0 5px black;
+}
