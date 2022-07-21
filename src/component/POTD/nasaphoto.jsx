@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import "./potd.css";
 
 export default function NasaPhoto() {
   const [photoData, setPhotoData] = useState(null);
@@ -19,12 +20,12 @@ export default function NasaPhoto() {
   if (!photoData) return <div />;
 
   return (
-    <div>
-      <img src={photoData.url} alt={photoData.title} />
+    <div className="container">
+      <img className="Pic" src={photoData.url} alt={photoData.title} />
       <div>
-        <h1>{photoData.title}</h1>
-        <p>{photoData.date}</p>
-        <p>{photoData.explanation}</p>
+        <h1 className="Title">{photoData.title}</h1>
+        <p className="tarik">{photoData.date}</p>
+        <p className="description">{photoData.explanation}</p>
       </div>
     </div>
   );

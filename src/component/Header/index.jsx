@@ -1,4 +1,5 @@
 import { Nav, NavLink, Bars, NavMenu, Title } from "./headerElements";
+import React from "react";
 
 const Header = () => {
   return (
