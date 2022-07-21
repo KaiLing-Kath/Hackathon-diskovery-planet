@@ -15,7 +15,7 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
-  font-size: x-large;
+  font-size: large;
 }
 .description_box {
   display: flex;
@@ -45,4 +45,16 @@
 }
 .title {
   font-size: large;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+/* Clear floats after the columns */
+.description_box:after {
+  content: "";
+  display: table;
+  clear: both;
 }

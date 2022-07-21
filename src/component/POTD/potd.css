@@ -1,30 +1,40 @@
-/* body {
-  margin: 0;
-  font-family: "Times New Roman", "Times", "serif";
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: rgb(248, 243, 243);
-  display: flex;
-  justify-content: center;
-}
-
-div {
-  padding-top: 50px;
-  padding-right: 80px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-} */
-
-.Title {
+.MainTitle {
   color: rgb(250, 248, 245);
+  font-family: "Times", "Times New Roman", "Georgia, serif";
   font-weight: bold;
+  justify-content: space-around;
+  font-size: xx-large;
+}
+.SubTitle {
+  color: rgb(250, 248, 245);
+  font-family: "Times", "Times New Roman", "Georgia, serif";
+  font-weight: bold;
+  justify-content: space-around;
+  font-size: x-large;
 }
 .tarik {
   color: rgb(6, 207, 252);
   font-family: "Lucida Console", "Courier New", monospace;
+  justify-content: space-around;
+  font-size: small;
 }
 
 .description {
   color: rgb(255, 255, 255);
+  font-size: medium;
+  display: flex;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.container {
+  padding: 10px 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.Pic {
+  height: 30vw;
+  width: 60vw;
+  display: flex;
+  justify-items: center;
 }
