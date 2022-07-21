@@ -46,11 +46,13 @@ const Modal = (props) => {
             </button>
           </div>
 
-          <div className="description">
+          <div className="description_box">
             <img className="planet_image" src={image} alt="Image"></img>
-            <div className="planet_descripton">
-              <p>{planets[props.index].planet_name}</p>
-              <p>{description.slice(0, description.indexOf("Read more"))}</p>
+            <div className="planet_name_descripton">
+              <p className="planet_name">{planets[props.index].planet_name}</p>
+              <p className="planet_description">
+                {description.slice(0, description.indexOf("Read more"))}
+              </p>
             </div>
           </div>
         </div>
