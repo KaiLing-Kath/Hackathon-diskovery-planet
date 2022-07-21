@@ -1,18 +1,29 @@
 input {
-  width: 150px;
+  width: 15vw;
   height: auto;
+  animation: rotation 10s infinite linear;
 }
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(365deg);
+  }
+}
+
 input:hover {
   transform: scale(1.5);
 }
+
 .planets {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  padding: 5%;
+
+  padding: 2vw;
 }
 .planet_animation {
   padding: 1.5rem;
 }
-/* min-height: calc(100vh - 85px); */

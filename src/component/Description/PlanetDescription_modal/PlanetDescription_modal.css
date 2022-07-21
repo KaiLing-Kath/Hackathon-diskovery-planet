@@ -3,18 +3,40 @@
   width: auto;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 0 100px;
+  margin-top: 1vw;
+  padding: 2vw 5vw;
+  border: solid;
+  box-shadow: inset 10px yellow;
+  border-radius: 15px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .popup_header {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  font-size: medium;
+  font-size: x-large;
 }
-.description {
+.description_box {
   display: flex;
 }
+.description_box > img {
+  height: 25vw;
+  width: 25vw;
+}
+
+.planet_description {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: large;
+  line-height: 1.5;
+}
+
+.planet_name {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
 .close_btn {
   background: rgba(0, 0, 0, 0.5);
   border: 0;
@@ -23,12 +45,4 @@
 }
 .title {
   font-size: large;
-}
-
-.planet_image {
-  height: 500px;
-  width: 500px;
-}
-.planet_description {
-  width: 100%;
 }
