@@ -1,8 +1,14 @@
-input {
+.planets > input {
   width: 15vw;
   height: auto;
   animation: rotation 10s infinite linear;
 }
+.planets input:hover {
+  animation-play-state: paused;
+  animation: none !important;
+  transform: scale(1.6);
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -12,8 +18,8 @@ input {
   }
 }
 
-input:hover {
-  transform: scale(1.5);
+input :hover {
+  animation-play-state: paused;
 }
 
 .planets {

@@ -26,7 +26,7 @@ function App() {
             }
           />
           <Route path="/miniquizz" element={<MiniQuizz />} />
-          <Route path="/forum" element={<Comments />} />
+          <Route path="/forum" element={<Comments currentUserId={"1"} />} />
           <Route path="/potd" element={<NasaPhoto />} />
         </Routes>
       </Router>
