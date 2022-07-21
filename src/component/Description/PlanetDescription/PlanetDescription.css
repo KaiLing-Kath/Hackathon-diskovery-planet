@@ -21,7 +21,7 @@ input:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-
+  row-gap: 5vw;
   padding: 2vw;
 }
 .planet_animation {

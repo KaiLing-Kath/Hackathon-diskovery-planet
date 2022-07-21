@@ -1,4 +1,11 @@
-.Title {
+.MainTitle {
+  color: rgb(250, 248, 245);
+  font-family: "Times", "Times New Roman", "Georgia, serif";
+  font-weight: bold;
+  justify-content: space-around;
+  font-size: xx-large;
+}
+.SubTitle {
   color: rgb(250, 248, 245);
   font-family: "Times", "Times New Roman", "Georgia, serif";
   font-weight: bold;
@@ -21,7 +28,7 @@
 }
 
 .container {
-  padding: 10px 20vw;
+  padding: 10px 1.5rem;
   font-family: "Courier New", Courier, monospace;
 }
 

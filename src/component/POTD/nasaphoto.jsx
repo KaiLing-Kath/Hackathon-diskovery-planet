@@ -21,9 +21,10 @@ export default function NasaPhoto() {
 
   return (
     <div className="container">
+      <h1 className="MainTitle">Picture Of The Day</h1>
       <img className="Pic" src={photoData.url} alt={photoData.title} />
       <div>
-        <h1 className="Title">{photoData.title}</h1>
+        <h1 className="SubTitle">{photoData.title}</h1>
         <p className="tarik">{photoData.date}</p>
         <p className="description">{photoData.explanation}</p>
       </div>
