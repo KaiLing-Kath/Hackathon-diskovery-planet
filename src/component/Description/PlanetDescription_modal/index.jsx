@@ -14,7 +14,7 @@ const Modal = (props) => {
 
   const planets = props.planets;
 
-  //function to get planet info
+  //to get planet info
   useEffect(
     (res) => {
       api
