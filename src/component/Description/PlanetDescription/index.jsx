@@ -8,7 +8,7 @@ const PlanetDescription = () => {
   const [popup, setPopup] = useState(true);
   //to indicate which planet is click
   const [index, setIndex] = useState(6);
-
+  //list of planets to get from api
   const planets = [
     {
       planet_name: "Sun",
