@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-// import ReactDOM from "react-dom";
 import "./miniquizz.css";
 
-//Initiating the List of Question
 const MiniQuizz = () => {
   const questionList = [
     {
@@ -61,21 +59,21 @@ const MiniQuizz = () => {
     },
   ];
 
-  // properties
+  // useState Hooks
   const [currentIndexQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [result, setResult] = useState(false);
   const currentQuestion = questionList[currentIndexQuestion];
   const nextQuestion = currentIndexQuestion + 1;
 
-  //method to restart the quiz
+  // to restart the quiz
   const restartQuiz = () => {
     setScore(0);
     setCurrentQuestion(0);
     setResult(false);
   };
 
-  // method to set the score
+  // increment of score & passing to the next question
   const handleAnswerItemClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);

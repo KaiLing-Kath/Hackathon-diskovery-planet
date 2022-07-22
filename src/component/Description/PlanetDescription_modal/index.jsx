@@ -7,11 +7,14 @@ const api = axios.create({
 });
 
 const Modal = (props) => {
+  //to store planet info
   const [image, setImage] = useState("");
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
 
   const planets = props.planets;
+
+  //function to get planet info
   useEffect(
     (res) => {
       api
@@ -34,7 +37,7 @@ const Modal = (props) => {
     },
     [props.index]
   );
-
+  //content to display in the popup
   return (
     <>
       {props.popup ? (
@@ -64,18 +67,4 @@ const Modal = (props) => {
   );
 };
 
-// <div className="description_box" class="row">
-//   <img
-//     className="planet_image"
-//     src={image}
-//     alt="Image"
-//     class="column"
-//   ></img>
-//   <div className="planet_name_descripton" class="column">
-//     <p className="planet_name">{planets[props.index].planet_name}</p>
-//     <p className="planet_description">
-//       {description.slice(0, description.indexOf("http"))}
-//     </p>
-//   </div>
-// </div>;
 export default Modal;
